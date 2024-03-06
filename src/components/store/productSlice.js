@@ -14,9 +14,13 @@ const productSlice = createSlice({
         },
         cartData: (state, action) => {
             state.cartItems.push(action.payload)
+        },
+        QtyIncrese: (state, action) => {
+            state.data = action.payload
         }
+
 
     }
 });
-export const { productData, cartData } = productSlice.actions;
+export const { productData, cartData, QtyIncrese } = productSlice.actions;
 export default productSlice.reducer

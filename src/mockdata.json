@@ -2,42 +2,42 @@
     "milk": [
         {
             "name": "gold plus",
-            "quantity": " ",
+            "quantity": 1,
             "price": 45,
             "image": "https://sangamdairy.com/portals/0/1-gold.png",
             "id": 1
         },
         {
             "name": " samll gold plus",
-            "quantity": " ",
+            "quantity": 1,
             "price": 20,
             "image": "https://sangamdairy.com/portals/0/2-gold.png",
             "id": 2
         },
         {
             "name": "Tea special milk",
-            "quantity": " ",
+            "quantity": 1,
             "price": 80,
             "image": "https://sangamdairy.com/portals/0/3-millk.png",
             "id": 3
         },
         {
             "name": "Tea special milk",
-            "quantity": " ",
+            "quantity": 1,
             "price": 30,
             "image": "https://sangamdairy.com/portals/0/9.png",
             "id": 4
         },
         {
             "name": "Tea special milk",
-            "quantity": " ",
+            "quantity": 1,
             "price": 15,
             "image": "https://sangamdairy.com/portals/0/10.png",
             "id": 5
         },
         {
             "name": "full cream milk",
-            "quantity": " ",
+            "quantity": 1,
             "price": 50,
             "image": "https://sangamdairy.com/portals/0/5.png",
             "id": 6
