@@ -16,9 +16,10 @@ const Milk = () => {
                 return cartItem;
             }
 
-        })
+        });
 
-        dispatch(cartData(filterCartData))
+
+        dispatch(cartData(filterCartData));
     };
 
 
@@ -31,6 +32,7 @@ const Milk = () => {
                         <div className='py-3'><img src={product.image} style={{ width: "300px", height: "300px" }} /></div>
                         <div className='py-3 text-2xl font-sans font-bold md:text-xl sm:text-base'>{product.name}</div>
                         <div className='py-3 text-2xl font-sans font-bold md:text-xl sm:text-base'>Rs/- {product.price}</div>
+                        <div className='py-3 text-2xl font-sans font-bold md:text-xl sm:text-base'>Quantity- {product.quantity}</div>
                         <div className='flex'>
                             <div className='px-5'>
                                 <button className='px-5 py-3 bg-blue-700 text-white font-serif font-bold rounded-lg hover:bg-sky-600 active:bg-sky-700' onClick={() => {

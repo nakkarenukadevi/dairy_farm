@@ -5,7 +5,8 @@ const productSlice = createSlice({
 
     initialState: {
         data: [],
-        cartItems: []
+        cartItems: [],
+        buyProduct: []
     },
     reducers: {
         productData: (state, action) => {
@@ -16,7 +17,7 @@ const productSlice = createSlice({
             state.cartItems.push(action.payload)
         },
         QtyIncrese: (state, action) => {
-            state.data = action.payload
+            state.buyProduct = action.payload
         }
 
 
