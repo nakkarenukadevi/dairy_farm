@@ -14,7 +14,7 @@ const productSlice = createSlice({
 
         },
         cartData: (state, action) => {
-            state.cartItems.push(action.payload)
+            state.cartItems = action.payload
         },
         QtyIncrese: (state, action) => {
             state.buyProduct = action.payload

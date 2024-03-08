@@ -20,10 +20,9 @@ const routes = createBrowserRouter([
             },
             {
                 path: "/milk",
-                element: <Milk
-                />
+                element: <Milk />
 
-            },
+            }
             ,
             {
                 path: "/cart",

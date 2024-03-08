@@ -1,8 +1,8 @@
 import React, { useState } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
 import { useLocation } from 'react-router-dom'
-import { QtyIncrese } from "../components/store/productSlice"
 
+import { QtyIncrese } from '../components/store/productSlice'
 const BuyItems = () => {
     let { state } = useLocation()
     let { data, buyProduct } = useSelector((state) => state.product);

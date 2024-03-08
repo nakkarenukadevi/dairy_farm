@@ -1,6 +1,6 @@
 import React from 'react'
 import { useSelector, useDispatch } from 'react-redux';
-import { cartData } from './store/productSlice';
+import { QtyIncrese, cartData } from './store/productSlice';
 import { useNavigate, Link } from 'react-router-dom';
 
 const Milk = () => {
@@ -11,16 +11,45 @@ const Milk = () => {
     let navigate = useNavigate();
 
     let cart = (product) => {
-        let filterCartData = data.find((cartItem) => {
-            if (cartItem.id == product.id) {
-                return cartItem;
-            }
 
+        let data1 = [...data];
+        let cartItem1 = [...cartItems];
+        let newCart = [];
+
+        let filtercartItem = data1.find((item) => {
+            if (item.id == product.id) {
+                return true;
+            }
         });
 
+        let filtercartItem1 = { ...filtercartItem };
 
-        dispatch(cartData(filterCartData));
-    };
+        let isItemInsidecart =
+            cartItem1 &&
+            cartItem1.find((item) => {
+                if (item.id == product.id) {
+                    return true;
+                }
+            });
+
+        if (isItemInsidecart) {
+            newCart = cartItem1.map((item) => {
+                if (item.id === product.id) {
+                    let item1 = { ...item };
+                    item1["quantity"] = item1["quantity"] + 1;
+
+                    return item1;
+                } else return item;
+            });
+        } else {
+            newCart = [...cartItem1];
+            let value = filtercartItem1.quantity;
+            Object.assign(filtercartItem1, { quantity: value });
+            newCart.push(filtercartItem1);
+        }
+        dispatch(cartData(newCart))
+
+    }
 
 
 
@@ -28,7 +57,7 @@ const Milk = () => {
         <div className='grid grid-cols-3 gap-4 justify-items-center  items-center py-20 xl:grid-cols-3 md:grid-cols-2 sm:grid-cols-1'>
             {
                 data.map((product) => {
-                    return <div className='grid justify-items-center items-center py-4' key={product}>
+                    return <div className='grid justify-items-center items-center py-4' key={product.id}>
                         <div className='py-3'><img src={product.image} style={{ width: "300px", height: "300px" }} /></div>
                         <div className='py-3 text-2xl font-sans font-bold md:text-xl sm:text-base'>{product.name}</div>
                         <div className='py-3 text-2xl font-sans font-bold md:text-xl sm:text-base'>Rs/- {product.price}</div>
