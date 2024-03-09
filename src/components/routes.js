@@ -6,6 +6,7 @@ import Home from './Home'
 import Milk from './Milk';
 import Cart from './Cart';
 import BuyItems from './BuyItems';
+import { Countries } from './countries';
 
 
 const routes = createBrowserRouter([
@@ -34,6 +35,10 @@ const routes = createBrowserRouter([
                 path: "/buy",
                 element: <BuyItems />
 
+            },
+            {
+                path: "/countries",
+                element: <Countries />
             }
 
         ]

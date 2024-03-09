@@ -38,6 +38,7 @@ const Header = () => {
                     <div className='m-2 hover:bg-white p-3 rounded-lg hover:text-black active:bg-slate-200  text-white font-serif font-semibold '>sweets</div>
 
                 </div> : null}
+                <Link to="/countries"><div>countries</div></Link>
                 <div className='text-2xl'><Link to="cart">cart({cartLength == "" ? 0 : cartLength})</Link></div>
             </div>
 
