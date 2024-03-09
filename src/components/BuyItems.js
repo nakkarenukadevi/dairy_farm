@@ -24,7 +24,7 @@ const BuyItems = () => {
     }
     dispatch(QtyIncrese(buyItem))
     return (
-        <div className='grid mx-10 lg:justify-start sm:justify-center '>
+        <div className='grid mx-10 lg:justify-start sm:justify-center absolute top-20 ' key={buyItem.id}>
             <div className=' flex py-10   w-full border-b-2  '>
                 <div className='flex  w-20 justify-between font-semibold items-center '><img src={buyItem.image} style={{ widht: "100px", height: "100px" }} /></div>
                 <div className='flex  w-20 justify-between font-semibold items-center mx-3'>{buyItem.name}</div>

@@ -12,23 +12,15 @@ const Header = () => {
 
     let Navigate = useNavigate();
     let cartLength = 0;
+
     cartItems.forEach((item) => {
-        if (cartLength == 0 || item.quantity < 1) {
-            cartLength = item.quantity
-        } else {
-            if (cartItems.length >= 1) {
-                cartItems.forEach((item) => {
-                    cartLength = item.quantity
-                })
-                cartLength = item.quantity + cartItems.length
-            }
-        }
-
-
-
+        return cartLength += item.quantity
     })
-    console.log("cartitemquantity" + " " + cartLength)
-    console.log("cartItems" + " " + cartItems.length)
+    console.log(cartLength)
+
+
+
+
 
     return (
         <div className='bg-green-600 h-20 text-white font-serif fixed top-0 w-full font-bold z-10'>
