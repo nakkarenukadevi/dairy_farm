@@ -42,5 +42,105 @@
             "image": "https://sangamdairy.com/portals/0/5.png",
             "id": 6
         }
+    ],
+    "bi product": [
+        {
+            "name": "special curd",
+            "id": "1",
+            "price": 700,
+            "image": "https://sangamdairy.com/portals/0/curd1.png",
+            "quantity": "1"
+        },
+        {
+            "name": "curd 1",
+            "id": "2",
+            "price": 500,
+            "image": "https://sangamdairy.com/portals/0/curd3.png",
+            "quantity": "1"
+        },
+        {
+            "name": "curd 2",
+            "id": "3",
+            "price": 400,
+            "image": "https://sangamdairy.com/portals/0/curd3.png",
+            "quantity": "1"
+        },
+        {
+            "name": "curd 3",
+            "id": "4",
+            "price": 450,
+            "image": "https://sangamdairy.com/portals/0/Curd5.png",
+            "quantity": "1"
+        },
+        {
+            "name": "curd 4",
+            "id": "5",
+            "price": 50,
+            "image": "https://sangamdairy.com/portals/0/Curd6.png",
+            "quantity": "1"
+        },
+        {
+            "name": "curd 5",
+            "id": "6",
+            "price": 10,
+            "image": "https://sangamdairy.com/portals/0/curd7.png",
+            "quantity": "1"
+        },
+        {
+            "name": "curd 6",
+            "id": "7",
+            "price": 40,
+            "image": "https://sangamdairy.com/portals/0/Curd11.png",
+            "quantity": "1"
+        },
+        {
+            "name": " jeera buttermilk",
+            "id": "8",
+            "price": 20,
+            "image": "https://sangamdairy.com/portals/0/buttermilk1.png",
+            "quantity": "1"
+        },
+        {
+            "name": " buttermilk",
+            "id": "9",
+            "price": 10,
+            "image": "https://sangamdairy.com/portals/0/buttermilk1.png",
+            "quantity": "1"
+        },
+        {
+            "name": " Diet lassi",
+            "id": "10",
+            "price": 30,
+            "image": "https://sangamdairy.com/portals/0/Lassi1.png",
+            "quantity": "1"
+        },
+        {
+            "name": " Mango lassi",
+            "id": "11",
+            "price": 30,
+            "image": "https://sangamdairy.com/portals/0/Lassi2.png",
+            "quantity": "1"
+        },
+        {
+            "name": " vanila lassi",
+            "id": "12",
+            "price": 33,
+            "image": "https://sangamdairy.com/portals/0/Lassi3.png",
+            "quantity": "1"
+        },
+        {
+            "name": " straw berray",
+            "id": "13",
+            "price": 33,
+            "image": "https://sangamdairy.com/portals/0/Lassi4.png",
+            "quantity": "1"
+        },
+        {
+            "name": " paneer",
+            "id": "14",
+            "price": 33,
+            "image": "https://sangamdairy.com/portals/0/Lassi4.png",
+            "quantity": " 1"
+        }
     ]
 }

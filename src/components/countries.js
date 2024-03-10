@@ -22,7 +22,7 @@ export const Countries = () => {
         <div className='relative top-32 left-1/4'>
             <div className='text-center bg-black text-white w-32 mx-5 p-4'> Countries</div>
             {countries.map((coun, index) => {
-                return <div key={index} onClick={() => { showCities(coun.name) }}>
+                return <div key={index} className="countries" onClick={() => { showCities(coun.name) }}>
 
                     <div className='text-start mx-10 my-4'> {coun.name}</div>
                     <div className="absolute top-0 left-1/4 ">

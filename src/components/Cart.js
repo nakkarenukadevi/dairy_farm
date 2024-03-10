@@ -6,7 +6,7 @@ const Cart = () => {
     console.log(cartItems)
     let total = 0
     cartItems.forEach((item) => {
-        return total += item.price
+        return total += item.quantity * item.price
     })
     return (
         <div className='  absolute top-20 left-1/4  w-1/2 justify-center items-center'>{

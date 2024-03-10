@@ -1,14 +1,14 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { useSelector, useDispatch } from 'react-redux';
 import { QtyIncrese, cartData } from './store/productSlice';
-import { useNavigate, Link } from 'react-router-dom';
+import { useNavigate, Link, useLocation } from 'react-router-dom';
 
 const Milk = () => {
     let { data, cartItems } = useSelector((state) => state.product);
 
     let dispatch = useDispatch();
 
-    let navigate = useNavigate();
+    let { state } = useLocation();
 
     let cart = (product) => {
 
@@ -56,7 +56,7 @@ const Milk = () => {
     return (
         <div className='grid grid-cols-3 gap-4 justify-items-center  items-center py-20 xl:grid-cols-3 md:grid-cols-2 sm:grid-cols-1'>
             {
-                data.map((product) => {
+                data.milk.map((product) => {
                     return <div className='grid justify-items-center items-center py-4' key={product.id}>
                         <div className='py-3'><img src={product.image} style={{ width: "300px", height: "300px" }} /></div>
                         <div className='py-3 text-2xl font-sans font-bold md:text-xl sm:text-base'>{product.name}</div>
